@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ram Mandir liquid masking by CODEWITHANUJa</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\USER\Desktop\portfolio_anuja\ram.css">
+</head>
+<body>
+	<div class="content">
+		<img src="C:\Users\USER\Downloads\desktop-wallpaper-ram-mandir-ram-mandir-ayodhya-for.jpg"/>
+	</div>
+<canvas></canvas>
+<div class="overlay"
+Jay Shree Ram
+</div>
+<script type="x-shader/x-fragment" id="vertshader">
+	percision highp float;
+	attribute vec2 aPosition;
+	varying vec2 vUv;
+	varying vec2 vL;
+	varying vec2 vR;
+	varying vec2 vT;
+	varying vec2 vB;
+	uniform vec2 u_vertext_texel;
+	void main(){
+		vUv=aPosition * .5 + .5;
+		vL=vUv - vec2(u_vertex_texel.x,0.);
+		vR=vUv + vec2(u_vertex_texel.x,0.);
+		vT=vUv + vec2(u_vertex_texel.x,0.);
+		vB=vUv - vec2(u_vertex_texel.x,0.);
+		gl_Position = vec4(aPosition,0.,1.);
+	}
+</script>
+</body>
+</html>

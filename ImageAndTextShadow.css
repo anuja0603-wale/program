@@ -1,0 +1,12 @@
+	img{
+		height: 200px;
+		align-items: center;
+	width: 200px;
+	filter: drop-shadow(10px 10px 2px red);
+}
+h1{
+	width: 20%;
+	margin-top: 2%;
+	filter: drop-shadow(10px 10px 2px orangered);
+	text-shadow: 2px 4px 2px #1a1a1a;
+}
